@@ -8,7 +8,7 @@
     <header>
         <figure>
             <!-- svelte-ignore a11y_img_redundant_alt -->
-            <img src="evilmads.jpg"alt="My photo" width="20" height="20" class="profile-pic">
+            <img src="MshjrUnderskriftV1.png"alt="My photo" width="250" class="profile-pic">
         </figure>
     </header>
 
@@ -17,7 +17,7 @@
             <li><a class="active" href="/about">About me</a></li>
             <li><a href="/education">Education</a></li>
             <li><a href="/art">Art Gallery</a></li>
-            <li><a href="/it">IT Work</a></li>
+            <li><a href="/it">IT Projects</a></li>
         </ul>
     </nav>
 </main>
@@ -25,7 +25,7 @@
 <!-- CSS -->
 <style>
     main {
-        background-color: hotpink;
+        background-color: #c6c6e0;
         padding: 1em;
         height: auto;
         margin: auto;
