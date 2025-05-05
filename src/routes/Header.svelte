@@ -18,7 +18,7 @@
             <img src="MshjrUnderskriftV2.png"alt="My photo" width="250" class="profile-pic">
         </figure>
     </header>
-
+<!-- Jeg fucking brøler -->
     <nav>
         <ul>
             {#each sections as section}
