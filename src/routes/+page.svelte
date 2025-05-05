@@ -2,15 +2,13 @@
 <script lang="ts">
     import '../app.css';
     import Header from './Header.svelte';
+    import Footer from './Footer.svelte';
     let { children } = $props();
-
 </script>
-
 
 <!-- HTML -->
 <main>
     <Header />
-
     
     <div class="test-container">
         <h1>Welcome to SvelteKit</h1>
@@ -18,11 +16,19 @@
         <p><a href="https://kit.svelte.dev/docs/introduction">Documentation</a></p>
         <p><a href="https://svelte.dev/repl">REPL</a></p>
     </div>
+
+
+    <Footer />
 </main>
 
 
 <!-- CSS -->
 <style>
+    main {
+        background-color: black;
+        min-height: 100vh;
+    }
+
     .test-container {
         background-color: #333;
         padding: 1em;
