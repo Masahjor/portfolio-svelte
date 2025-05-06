@@ -2,6 +2,7 @@
 <script lang="ts">
     import '../app.css';
     import Header from './Header.svelte';
+    import Main from './Main.svelte';
     import Footer from './Footer.svelte';
     let { children } = $props();
 </script>
@@ -10,13 +11,14 @@
 <main>
     <Header />
     
-    <div class="test-container">
+    <!-- <div class="test-container">
         <h1>Welcome to SvelteKit</h1>
         <p>To get started, edit <code>src/routes/+page.svelte</code> and save to reload.</p>
         <p><a href="https://kit.svelte.dev/docs/introduction">Documentation</a></p>
         <p><a href="https://svelte.dev/repl">REPL</a></p>
-    </div>
+    </div> -->
 
+    <Main/>
 
     <Footer />
 </main>
@@ -24,12 +26,25 @@
 
 <!-- CSS -->
 <style>
-    main {
-        background-color: black;
-        min-height: 100vh;
+    :global(main) {
+        /* background-color: black; */
+        /* min-height: 100vh; */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 280vh;
+        background: url(sketchesMay5th.png) repeat 0 0;
+        animation: animate 10s infinite;
+        animation-timing-function: linear;
     }
 
-    .test-container {
+    @keyframes animate {
+        100%{
+            background-position: -1024PX -512px;
+        }
+    }
+
+    /* .test-container {
         background-color: #333;
         padding: 1em;
         max-width: 600px;
@@ -61,7 +76,7 @@
             color: #fff;
         }
 
-    }
+    } */
 </style>
 
 

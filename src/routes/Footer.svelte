@@ -4,7 +4,8 @@
 </script>
 
 <!-- HTML -->
-<main>
+<div class="footer">
+    <!-- The pain I endure to create a fancy background kills me -->
     <h2>Socials</h2>
     <div class="social-icons">
         <a class="SoMe-icon" href="https://www.youtube.com/@masahjor" target="_blank" rel="noopener noreferrer">
@@ -23,7 +24,7 @@
     <p class="footer-note">
         Build with <a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer" class="sveltekit">Sveltekit</a> & <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="tailwind">Tailwind</a>
     </p>
-</main>
+</div>
 
 <!-- CSS -->
 <style>
@@ -32,9 +33,10 @@
         src: url('Nexa-Heavy.ttf') format('truetype');
     }
 
-    main {
+    .footer {
         font-family: 'Nexa-Heavy.ttf', sans-serif;
-        background-color: lightgray;
+        background: lightgray;
+        background: linear-gradient(0deg,rgb(255, 255, 255) 20%, rgba(119, 68, 68, 0) 100%);
         padding: 1em;
         height: auto;
         margin: auto;
@@ -71,10 +73,20 @@
 
     .sveltekit {
         color: #ff3e00;
+        transition: color 0.2s ease;
+    }
+
+    .sveltekit:hover {
+        color: #ffbc14;
     }
 
     .tailwind {
         color: #3f48cc;
+        transition: color 0.2s ease;
+    }
+
+    .tailwind:hover {
+        color: #50acf1;
     }
     
     .SoMe-icon {

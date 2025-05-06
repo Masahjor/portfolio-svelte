@@ -11,7 +11,8 @@
 </script>
 
 <!-- HTML -->
-<main>
+<div class="header">
+    <!-- This solution sucks, but it will have to do -->
     <header>
         <figure>
             <!-- svelte-ignore a11y_img_redundant_alt -->
@@ -28,7 +29,7 @@
         {/each}
         </ul>
     </nav>
-</main>
+</div>
 
 <!-- CSS -->
 <style>
@@ -37,9 +38,10 @@
         src: url('Nexa-ExtraLight.ttf') format('truetype');
     }
 
-    main {
+    .header {
         font-family: 'Nexa-ExtraLight.ttf', sans-serif;
-        background-color: lightgray;
+        background: lightgray;
+        background: linear-gradient(180deg,rgba(211, 211, 211, 1) 20%, rgba(0, 0, 0, 0) 100%);
         padding: 1em;
         height: auto;
         margin: auto;
