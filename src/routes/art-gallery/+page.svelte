@@ -19,10 +19,6 @@
 
 <!-- CSS -->
 <style>
-    main {
-        background-color: black;
-        min-height: 100vh;
-    }
     
 </style>
 

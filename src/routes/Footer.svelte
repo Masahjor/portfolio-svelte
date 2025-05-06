@@ -8,21 +8,21 @@
     <!-- The pain I endure to create a fancy background kills me -->
     <h2>Socials</h2>
     <div class="social-icons">
-        <a class="SoMe-icon" href="https://www.youtube.com/@masahjor" target="_blank" rel="noopener noreferrer">
+        <a class="SoMe-icon youtube" href="https://www.youtube.com/@masahjor" target="_blank" rel="noopener noreferrer">
             <img src="youtube-logo.png" alt="Youtube" />
         </a>
-        <a class="SoMe-icon" href="https://bsky.app/profile/masahjor.bsky.social" target="_blank" rel="noopener noreferrer">
+        <a class="SoMe-icon bsky" href="https://bsky.app/profile/masahjor.bsky.social" target="_blank" rel="noopener noreferrer">
             <img src="bsky-logo.png" alt="Bluesky" />
         </a>
-        <a class="SoMe-icon" href="https://github.com/Masahjor" target="_blank" rel="noopener noreferrer">
+        <a class="SoMe-icon github" href="https://github.com/Masahjor" target="_blank" rel="noopener noreferrer">
             <img src="github-logo.png" alt="Github" />
         </a>
-        <a class="SoMe-icon" href="https://cara.app/masahjor" target="_blank" rel="noopener noreferrer">
+        <a class="SoMe-icon cara" href="https://cara.app/masahjor" target="_blank" rel="noopener noreferrer">
             <img src="cara-logo.png" alt="Cara" />
         </a>
     </div>
     <p class="footer-note">
-        Build with <a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer" class="sveltekit">Sveltekit</a> & <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="tailwind">Tailwind</a>
+        Built with <a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer" class="sveltekit">SvelteKit</a> & <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="tailwind">Tailwind</a>
     </p>
 </div>
 
@@ -86,14 +86,29 @@
     }
 
     .tailwind:hover {
-        color: #50acf1;
+        color: #4ac8de;
     }
     
     .SoMe-icon {
         transition: transform .2s;
     }
     .SoMe-icon:hover {
-        transform: scale(1.5)
-        ;
+        transform: scale(1.5);
+    }
+
+    .SoMe-icon.youtube:hover img {
+        content: url('youtube-hover-logo.png');
+    }
+
+    .SoMe-icon.bsky:hover img {
+        content: url('bsky-hover-logo.png');
+    }
+
+    .SoMe-icon.github:hover img {
+        content: url('github-hover-logo.png');
+    }
+
+    .SoMe-icon.cara:hover img {
+        content: url('cara-hover-logo.png');
     }
 </style>
