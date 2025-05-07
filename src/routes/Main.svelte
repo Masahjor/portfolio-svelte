@@ -6,7 +6,20 @@
 <!-- HTML -->
 <div class="main-content">
   <div class="grid-container">
-    <!-- First row -->
+
+    <!-- First row: H1 spanning both columns -->
+    <div class="grid-item image-span" style="grid-column: span 2;">
+      <h1>H1 title</h1>
+      <p>This is some filler content for the first column. You can add more text or elements here.</p>
+    </div>
+
+    <!-- Second row: Image spanning both columns -->
+    <div class="grid-item image-span" style="grid-column: span 2;">
+      <!-- svelte-ignore a11y_img_redundant_alt -->
+      <img src="myBaddies.png" alt="Placeholder Image" />
+    </div>
+
+    <!-- third row -->
     <div class="grid-item">
       <h2>Column 1</h2>
       <p>This is some filler content for the first column. You can add more text or elements here.</p>
@@ -16,13 +29,7 @@
       <p>This is some filler content for the second column. Feel free to customize it as needed.</p>
     </div>
 
-    <!-- Second row: Image spanning both columns -->
-    <div class="grid-item image-span" style="grid-column: span 2;">
-      <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src="airaccal.png" alt="Placeholder Image" />
-    </div>
-
-    <!-- Third row -->
+    <!-- Fourth row -->
     <div class="grid-item">
       <h2>Column 1 (Row 3)</h2>
       <p>This is some filler content for the first column in the third row. Add more text or elements as needed.</p>
