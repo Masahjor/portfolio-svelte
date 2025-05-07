@@ -17,4 +17,8 @@
     :global(main) {
         height: auto; /* Adjust height as needed */
     }
+    :global(h1) {
+        font-size: 4em;
+        color: green;
+    }
 </style>

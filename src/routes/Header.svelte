@@ -16,7 +16,7 @@
     <header>
         <figure>
             <!-- svelte-ignore a11y_img_redundant_alt -->
-            <img src="MshjrUnderskriftV2.png"alt="My photo" width="250" class="profile-pic">
+            <img src="Masahjor-Logo.png"alt="My photo" width="250" class="logo-pic">
         </figure>
     </header>
 <!-- Jeg fucking brøler -->
@@ -77,5 +77,19 @@
         transform: scale(1.1)
     }
 
+    .logo-pic {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 250px; /* Adjust as needed */
+        height: auto;
+        padding-bottom: 10px;  
+        transition: transform .2s;  
+    }
+
+    .logo-pic:hover {
+        content: url('Masahjor-Logo-Green.png');
+        transform: scale(1.05)
+    }
     
 </style>
