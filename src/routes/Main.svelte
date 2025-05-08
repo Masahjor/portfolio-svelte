@@ -17,32 +17,32 @@
     <!-- 2nd row: Image spanning both columns -->
     <div class="grid-item image-span" style="grid-column: span 2;">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src="myBaddies.png" alt="Placeholder Image" />
+      <img src={data.sections[0].image} alt="Placeholder Image" />
     </div>
 
     <!-- 3rd row -->
     <div class="grid-item" style="grid-column: span 2;">
-      <p>Listen fellas, hear me out...</p>
-      <p class="text-2-left"> My main hobbies include drawing, going for long walks in natural and urban environments, being evil and rampant maffing.</p>
+      <p>{data.sections[1].content1}</p>
+      <p class="text-2-left">{data.sections[1].content2}</p>
     </div>
 
     <!-- 4th row -->
     <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>Personality</h2>
+      <h2>{data.sections[2].title}</h2>
     </div>
     
     <!-- 5th row -->
     <div class="grid-item">
-      <p class="text-2-left">I am committed and focus a lot on my tasks/projects, and think visually. I have lots of humor and when you get to know me, that's when the fun conversations really begin. If you need help with something graphic, I'm almost always ready to help. I dream of an apprenticeship where I can make a difference and be part of a future team where I can contribute with my skills and not least learn a lot. My strongest skills have always been in creativity, language and design. I am a person with high-functioning autism. That means I perceive things and concepts from a perspective that may be different from that of other people.</p>
+      <p class="text-2-left">{data.sections[2].content}</p>
     </div>
     <div class="grid-item small-img">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src="pfp.jpg" alt="Placeholder Image" />
+      <img src={data.sections[2].image} alt="Placeholder Image" />
     </div>
 
     <!-- 6th row -->
     <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>Skills</h2>
+      <h2>{data.sections[3].title}</h2>
     </div>
 
     <!-- 7th row -->
