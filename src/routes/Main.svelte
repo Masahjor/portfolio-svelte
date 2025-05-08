@@ -1,16 +1,17 @@
-<!-- Script -->
+<!-- ========== Script ========== -->
 <script lang="ts">
   import data from './data.json'; // Import the JSON data
 </script>
 
-<!-- HTML -->
+<!-- ========== HTML ========== -->
 <div class="main-content">
   <div class="grid-container">
 
     <!-- 1st row: H1 spanning both columns -->
     <div class="grid-item image-span" style="grid-column: span 2;">
-      <h1>{data.sections[0].title}</h1> <!-- Dynamically bind the title from the first section in data.json -->
-      <p>Heya, welcome to my portfolio. My name is Masahjor and I'm a software developer of web applications and video games.</p>
+      <!-- Dynamically bind the title from the first section in data.json -->
+      <h1>{data.sections[0].title}</h1> 
+      <p>{data.sections[0].content}</p>
     </div>
 
     <!-- 2nd row: Image spanning both columns -->
@@ -69,7 +70,7 @@
   </div>
 </div>
 
-<!-- CSS -->
+<!-- ========== CSS ========== -->
 <style>
     @font-face {
         font-family: 'Nexa-ExtraLight.ttf';
@@ -163,3 +164,5 @@
   }
   
 </style>
+
+<!-- ========== End of code ========== -->
