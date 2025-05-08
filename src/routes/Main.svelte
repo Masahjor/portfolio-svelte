@@ -1,6 +1,6 @@
 <!-- Script -->
 <script lang="ts">
-
+  import data from './data.json'; // Import the JSON data
 </script>
 
 <!-- HTML -->
@@ -9,7 +9,7 @@
 
     <!-- 1st row: H1 spanning both columns -->
     <div class="grid-item image-span" style="grid-column: span 2;">
-      <h1>About me</h1>
+      <h1>{data.sections[0].title}</h1> <!-- Dynamically bind the title from the first section in data.json -->
       <p>Heya, welcome to my portfolio. My name is Masahjor and I'm a software developer of web applications and video games.</p>
     </div>
 
@@ -112,7 +112,7 @@
   }
 
   .grid-item-invisible {
-    background-color: rgba(68, 137, 68, 0.414); /* Make this item invisible */
+    background-color: rgba(185, 230, 117, 0.414); /* Make this item invisible */
     border: none; /* Remove border */
   }
 
@@ -128,7 +128,7 @@
   h2 {
     font-family: 'Nexa-Heavy.ttf', sans-serif;
     font-size: 2.5rem;
-    color: green;
+    color: darkgreen;
   }
 
   .text-2-left {

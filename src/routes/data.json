@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "title": "About Me",
+      "content": "Heya, welcome to my portfolio. My name is Masahjor and I'm a software developer of web applications and video games.",
+      "image": "myBaddies.png"
+    },
+    {
+      "title": "Personality",
+      "content": "I am committed and focus a lot on my tasks/projects, and think visually. I have lots of humor and when you get to know me, that's when the fun conversations really begin. If you need help with something graphic, I'm almost always ready to help. I dream of an apprenticeship where I can make a difference and be part of a future team where I can contribute with my skills and not least learn a lot. My strongest skills have always been in creativity, language and design. I am a person with high-functioning autism. That means I perceive things and concepts from a perspective that may be different from that of other people.",
+      "image": "pfp.jpg"
+    },
+    {
+      "title": "Skills",
+      "content": [
+        "The program I work with most often is Clip Studio Paint, it is where I draw 99% of the time when it's digital.",
+        "I have plenty of experience with the majority of apps found in the Adobe package, like Photoshop, Illustrator, InDesign, After Effects, and more.",
+        "I'm also decently skilled at a good chunk of computer languages and frameworks, though my specialty is the Svelte framework and TypeScript language.",
+        "Over the years I've managed to become very familiar with video editing, especially when it comes to making effective, fast, shortform entertainment videos.",
+        "Even though most of my skills require a computer, I'm excellent at working with my hands! Woodworking is a skill I've honed to great lengths, my specialty being homemade furniture construction and designing."
+      ],
+      "image": "MonsterPromBestGirl.png"
+    },
+    {
+      "title": "Life Story",
+      "content": "This is some filler content for the first column in the third row. Add more text or elements as needed.",
+      "image": "barbella.jpg"
+    }
+  ]
+}
