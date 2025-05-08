@@ -37,7 +37,7 @@
     </div>
     <div class="grid-item small-img">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[2].image} alt="Placeholder Image" />
+      <img src={data.sections[2].image} alt="Braingreen Image" />
     </div>
 
     <!-- 6th row -->
@@ -48,24 +48,20 @@
     <!-- 7th row -->
     <div class="grid-item small-img">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src="MonsterPromBestGirl.png" alt="Placeholder Image" />
+      <img src={data.sections[3].image} alt="Zoe Image" />
     </div>
     <div class="grid-item">
-      <p class="text-2-left">* The program I work with most often is Clip Studio Paint, it is where I draw 99% of the time when its digital.</p>
-      <p class="text-2-left">* I have plenty of experience with the majority of apps found in the Adobe package, like fx. Photoshop, Illustrator, InDesign, After Effects and more.</p>
-      <p class="text-2-left">* I'm also decently skilled at a good chunk of computer languages and frameworks, though my specialty is the Svelte framework and TypeScript language.</p>
-      <p class="text-2-left">* Over the years I've managed to become very familiar with video editing. Especially when it comes to making effective, fast, shortform entertainment videos.</p>
-      <p class="text-2-left">* Even though most of my skills require a computer, I'm excellent at working with my hands! Woodworking is a skill I've honed to great lengths, my specialty being homemade furniture construction and designing.</p>
+      <p class="text-2-left">{data.sections[3].content}</p>
     </div>
 
     <!-- Sixth row -->
     <div class="grid-item">
-      <h2>Life story</h2>
-      <p>This is some filler content for the first column in the third row. Add more text or elements as needed.</p>
+      <h2>{data.sections[4].title}</h2>
+      <p class="text-2-left">{data.sections[4].content}</p>
     </div>
     <div class="grid-item">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src="barbella.jpg" alt="Placeholder Image" class="small-img"/>
+      <img src={data.sections[4].image} alt="Placeholder Image" class="small-img"/>
     </div>
   </div>
 </div>
@@ -141,7 +137,7 @@
     .grid-container {
       grid-template-columns: 1fr; /* Single column layout */
       width: 90%; /* Adjust width for smaller screens */
-      background-color: green;
+      background-color: hotpink;
     }
 
     .grid-item {
@@ -161,6 +157,25 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
     background-color: limegreen;/* Add a subtle green background */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+
+  /* Add keyframes for fade-in */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation to grid items */
+  .grid-item {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: calc(var(--order) * 0.2s); /* Stagger animation */
   }
   
 </style>

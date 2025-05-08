@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "title": "About Me",
+      "title": "ABOUT ME",
       "content": "Heya, welcome to my portfolio. My name is Masahjor and I'm a software developer of web applications and video games.",
       "image": "myBaddies.png"
     },
@@ -10,12 +10,12 @@
         "content2": "My main hobbies include drawing, going for long walks in natural and urban environments, being evil and rampant maffing."
     },
     {
-      "title": "Personality",
+      "title": "PERSONALITY",
       "content": "I am committed and focus a lot on my tasks/projects, and think visually. I have lots of humor and when you get to know me, that's when the fun conversations really begin. If you need help with something graphic, I'm almost always ready to help. I dream of an apprenticeship where I can make a difference and be part of a future team where I can contribute with my skills and not least learn a lot. My strongest skills have always been in creativity, language and design. I am a person with high-functioning autism. That means I perceive things and concepts from a perspective that may be different from that of other people.",
       "image": "pfp.jpg"
     },
     {
-      "title": "Skills",
+      "title": "SKILLS",
       "content": [
         "The program I work with most often is Clip Studio Paint, it is where I draw 99% of the time when it's digital.",
         "I have plenty of experience with the majority of apps found in the Adobe package, like Photoshop, Illustrator, InDesign, After Effects, and more.",
@@ -26,7 +26,7 @@
       "image": "MonsterPromBestGirl.png"
     },
     {
-      "title": "Life Story",
+      "title": "LIFE STORY",
       "content": "This is some filler content for the first column in the third row. Add more text or elements as needed.",
       "image": "barbella.jpg"
     }
