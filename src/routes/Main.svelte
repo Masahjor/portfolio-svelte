@@ -17,7 +17,7 @@
     <!-- 2nd row: Image spanning both columns -->
     <div class="grid-item image-span" style="grid-column: span 2;">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[0].image} alt="Placeholder Image" />
+      <img src={data.sections[0].image} alt="About me Image" />
     </div>
 
     <!-- 3rd row -->
