@@ -35,9 +35,9 @@
     <div class="grid-item">
       <p class="text-2-left">{data.sections[2].content}</p>
     </div>
-    <div class="grid-item small-img">
+    <div class="grid-item highlight-img">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[2].image} alt="Braingreen Image" />
+      <img src={data.sections[2].image} alt="Personality Image" />
     </div>
 
     <!-- 6th row -->
@@ -46,22 +46,29 @@
     </div>
 
     <!-- 7th row -->
-    <div class="grid-item small-img">
+    <div class="grid-item highlight-img">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[3].image} alt="Zoe Image" />
+      <img src={data.sections[3].image} alt="Skills Image" />
     </div>
     <div class="grid-item">
       <p class="text-2-left">{data.sections[3].content}</p>
     </div>
 
-    <!-- Sixth row -->
-    <div class="grid-item">
+    <!-- 8th row -->
+    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
       <h2>{data.sections[4].title}</h2>
-      <p class="text-2-left">{data.sections[4].content}</p>
     </div>
     <div class="grid-item">
+      <p class="text-2-left">{data.sections[4].content}</p>
+    </div>
+    <div class="grid-item highlight-img">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[4].image} alt="Placeholder Image" class="small-img"/>
+      <img src={data.sections[4].image} alt="Life Story Image"/>
+    </div>
+
+    <!-- 9th row -->
+    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
+      <h2>HEOW</h2> <!-- {data.sections[5].title} -->
     </div>
   </div>
 </div>
@@ -153,7 +160,7 @@
     }
   }
 
-  .small-img:hover {
+  .highlight-img:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
     background-color: limegreen;/* Add a subtle green background */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
