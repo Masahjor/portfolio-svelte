@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "title": "Frequently Asked Questions",
+      "content": "Please read the FAQ before contacting me. You may find the answers to your questions here.",
+      "image": "AlexLogo.png"
+    },
+    {
+      "title": "How to use this website?",
+      "content": "This website is a portfolio showcasing my work. You can navigate through the pages using the navigation menu at the top.",
+      "image": "usage.png"
+    },
+    {
+      "title": "How to contact you?",
+      "content": "You can contact me through the contact form available on the website or by sending an email to my address.",
+      "image": "contact.png"
+    },
+    {
+      "title": "Where can I find your stuff?",
+      "content": "You can find my artwork and other projects in the 'ART GALLERY' and 'IT PROJECTS' pages of the website. Each page has information explaining about it's contents.",
+      "image": "projects.png"
+    }
+  ]
+}

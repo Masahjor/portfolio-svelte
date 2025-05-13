@@ -111,4 +111,10 @@
     .SoMe-icon.cara:hover img {
         content: url('cara-hover-logo.png');
     }
+
+     @media (max-width: 414px) {
+        .footer-note {
+            display: none;
+        }
+     }
 </style>

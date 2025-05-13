@@ -12,66 +12,12 @@
       <!-- Dynamically bind the title from the first section in data.json -->
       <h1>{data.sections[0].title}</h1> 
       <p>{data.sections[0].content}</p>
+      <img src={data.sections[0].image} alt="FAQ" />
+
     </div>
 
-    <!-- 2nd row: Image spanning both columns -->
-    <div class="grid-item image-span" style="grid-column: span 2;">
-      <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[0].image} alt="About me Image" />
-    </div>
-
-    <!-- 3rd row -->
-    <div class="grid-item" style="grid-column: span 2;">
-      <p>{data.sections[1].content1}</p>
-      <p class="text-2-left">{data.sections[1].content2}</p>
-    </div>
-
-    <!-- 4th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>{data.sections[2].title}</h2>
-    </div>
     
-    <!-- 5th row -->
-    <div class="grid-item phone-span">
-      <p class="text-2-left">{data.sections[2].content}</p>
-    </div>
-    <div class="grid-item highlight-img phone-span">
-      <div class="image-container">
-        <!-- svelte-ignore a11y_img_redundant_alt -->
-        <img src={data.sections[2].image} alt="Personality Image" />
-      </div>
-    </div>
 
-    <!-- 6th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>{data.sections[3].title}</h2>
-    </div>
-
-    <!-- 7th row -->
-    <div class="grid-item highlight-img phone-span">
-      <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[3].image} alt="Skills Image" />
-    </div>
-    <div class="grid-item phone-span">
-      <p class="text-2-left">{data.sections[3].content}</p>
-    </div>
-
-    <!-- 8th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>{data.sections[4].title}</h2>
-    </div>
-    <div class="grid-item phone-span">
-      <p class="text-2-left">{data.sections[4].content}</p>
-    </div>
-    <div class="grid-item highlight-img phone-span">
-      <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[4].image} alt="Life Story Image"/>
-    </div>
-
-    <!-- 9th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>HEOW</h2> <!-- {data.sections[5].title} -->
-    </div>
   </div>
 </div>
 
@@ -123,10 +69,11 @@
 
   }
 
-  .grid-item-invisible {
-    background-color: rgba(185, 230, 117, 0.414); /* Make this item invisible */
-    border: none; /* Remove border */
-  }
+  /* Redundant class */
+  /* .grid-item-invisible {
+    background-color: rgba(185, 230, 117, 0.414);
+    border: none;
+  } */
 
   .image-span {
     text-align: center;
@@ -137,7 +84,8 @@
     font-size: 4rem;
   }
 
-  h2 {
+  /* Redundant class */
+  /* h2 {
     font-family: 'Nexa-Heavy.ttf', sans-serif;
     font-size: 2.5rem;
     color: darkgreen;
@@ -145,7 +93,7 @@
 
   .text-2-left {
     text-align: left;
-  }
+  } */
 
   /* Responsive styles for phone screens */
   @media (max-width: 414px) {
@@ -163,9 +111,10 @@
       font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
-    .text-2-left {
-      font-size: 0.9rem; /* Adjust text size for readability */
-    }
+    /* Redundant class */
+    /* .text-2-left {
+      font-size: 0.9rem;
+    } */
 
     .phone-span {
        grid-column: span 2;

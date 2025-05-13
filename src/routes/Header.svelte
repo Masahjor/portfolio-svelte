@@ -76,6 +76,13 @@
     .logo-pic {
         max-width: 100%; /* Ensure responsiveness */
         height: auto;
+        padding-bottom: 15px;
+    }
+
+    .logo-pic:hover {
+        content: url('Masahjor-Logo-Green.png');
+        transform: scale(1.1);
+        transition: transform 0.2s;
     }
 
     nav {
