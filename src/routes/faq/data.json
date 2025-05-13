@@ -19,6 +19,21 @@
       "title": "Where can I find your stuff?",
       "content": "You can find my artwork and other projects in the 'ART GALLERY' and 'IT PROJECTS' pages of the website. Each page has information explaining about it's contents.",
       "image": "projects.png"
+    },
+    {
+      "title": "What is your background?",
+      "content": "I am a self-taught artist and developer with a passion for creating unique and engaging projects. I have experience in various fields including digital art, web development, and game design.",
+      "image": "background.png"
+    },
+    {
+      "title": "Do you take commissions?",
+      "content": "Yes, I do take commissions for artwork and projects. Please contact me through the contact form for more information.",
+      "image": "commissions.png"
+    },
+    {
+      "title": "Why have you kept the school names hidden in the education page?",
+      "content": "It is because I want to keep myself safe from possible stalkers and other people who may want to harm me, wether if it is intentional or not, the chances of being doxxed this way are too high for my liking. I want to keep myself, my family, and my friends safe. Weird people are everywhere, and I want to minimise the chances to be targeted. Hope you understand.",
+      "image": "privacy.png"
     }
   ]
 }
