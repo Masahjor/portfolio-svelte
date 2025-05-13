@@ -13,10 +13,49 @@
       <h1>{data.sections[0].title}</h1> 
       <p>{data.sections[0].content}</p>
       <img src={data.sections[0].image} alt="FAQ" />
-
     </div>
 
+    <div class="grid-item">
+      <!-- Dynamically bind the title from the second section in data.json -->
+      <h2>{data.sections[1].title}</h2>
+      <p>{data.sections[1].content}</p>
+      <img src={data.sections[1].image} alt="usage" />
+    </div>
+
+    <div class="grid-item">
+      <!-- Dynamically bind the title from the third section in data.json -->
+      <h2>{data.sections[2].title}</h2>
+      <p>{data.sections[2].content}</p>
+      <img src={data.sections[2].image} alt="contact" />
+    </div>
+
+    <div class="grid-item">
+      <!-- Dynamically bind the title from the fourth section in data.json -->
+      <h2>{data.sections[3].title}</h2>
+      <p>{data.sections[3].content}</p>
+      <img src={data.sections[3].image} alt="projects" />
+    </div>
     
+        <div class="grid-item">
+      <!-- Dynamically bind the title from the fourth section in data.json -->
+      <h2>{data.sections[4].title}</h2>
+      <p>{data.sections[4].content}</p>
+      <img src={data.sections[4].image} alt="background" />
+    </div>
+
+        <div class="grid-item">
+      <!-- Dynamically bind the title from the fourth section in data.json -->
+      <h2>{data.sections[5].title}</h2>
+      <p>{data.sections[5].content}</p>
+      <img src={data.sections[5].image} alt="commissions" />
+    </div>
+
+        <div class="grid-item">
+      <!-- Dynamically bind the title from the fourth section in data.json -->
+      <h2>{data.sections[6].title}</h2>
+      <p>{data.sections[6].content}</p>
+      <img src={data.sections[6].image} alt="privacy" />
+    </div>
 
   </div>
 </div>
@@ -116,16 +155,16 @@
       font-size: 0.9rem;
     } */
 
-    .phone-span {
+    /* .phone-span {
        grid-column: span 2;
-    }
+    } */
   }
-
+/* 
   .highlight-img:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-    background-color: limegreen;/* Add a subtle green background */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: limegreen;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+  } */
 
   /* Add keyframes for fade-in */
   @keyframes fadeInUp {
