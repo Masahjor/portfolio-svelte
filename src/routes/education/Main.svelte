@@ -14,58 +14,28 @@
       <p>{data.sections[0].content}</p>
     </div>
 
+    <!-- 2nd row: Image spanning both columns -->
+    <div class="grid-item image-span" style="grid-column: span 2;">
+      <!-- svelte-ignore a11y_img_redundant_alt -->
+      <img src={data.sections[0].image} alt="education img" />
+    </div>
+
         <!-- 2nd row: Image spanning both columns -->
     <div class="grid-item image-span" style="grid-column: span 2;">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[0].image} alt="FAQ img" />
+      <img src={data.sections[0].image} alt="About me Image" />
     </div>
 
-    <div class="grid-item">
-      <!-- Dynamically bind the title from the second section in data.json -->
-      <h2>{data.sections[1].title}</h2>
-      <p>{data.sections[1].content}</p>
-      <img src={data.sections[1].image} alt="usage" />
-    </div>
-
-    <div class="grid-item">
-      <!-- Dynamically bind the title from the third section in data.json -->
-      <h2>{data.sections[2].title}</h2>
-      <p>{data.sections[2].content}</p>
-      <img src={data.sections[2].image} alt="contact" />
-    </div>
-
-    <div class="grid-item">
-      <!-- Dynamically bind the title from the fourth section in data.json -->
-      <h2>{data.sections[3].title}</h2>
-      <p>{data.sections[3].content}</p>
-      <img src={data.sections[3].image} alt="projects" />
-    </div>
-    
-        <div class="grid-item">
-      <!-- Dynamically bind the title from the fourth section in data.json -->
-      <h2>{data.sections[4].title}</h2>
-      <p>{data.sections[4].content}</p>
-      <img src={data.sections[4].image} alt="background" />
-    </div>
-
-        <div class="grid-item">
-      <!-- Dynamically bind the title from the fourth section in data.json -->
-      <h2>{data.sections[5].title}</h2>
-      <p>{data.sections[5].content}</p>
-      <img src={data.sections[5].image} alt="commissions" />
-    </div>
-
-        <div class="grid-item">
-      <!-- Dynamically bind the title from the fourth section in data.json -->
-      <h2>{data.sections[6].title}</h2>
-      <p>{data.sections[6].content}</p>
-      <img src={data.sections[6].image} alt="privacy" />
+        <!-- 2nd row: Image spanning both columns -->
+    <div class="grid-item image-span" style="grid-column: span 2;">
+      <!-- svelte-ignore a11y_img_redundant_alt -->
+      <img src={data.sections[0].image} alt="About me Image" />
     </div>
 
     <div class="grid-item grid-item-opaque item-invisible" style="grid-column: span 2;">
-      <p class="item-invisible">Secret text :)</p> <!-- {data.sections[5].title} -->
+      <p class="item-invisible">Secret text :)</p>
     </div>
-
+   
   </div>
 </div>
 
@@ -117,7 +87,12 @@
 
   }
 
-    .item-invisible {
+  .grid-item-opaque {
+    background-color: rgba(185, 230, 117, 0.414); /* Make this item transparent */
+    border: none; /* Remove border */
+  }
+
+  .item-invisible {
     background-color: rgba(185, 230, 117, 0);
     color: rgba(185, 230, 117, 0);
     border: none;
@@ -133,8 +108,7 @@
     font-size: 4rem;
   }
 
-  /* Redundant class */
-  /* h2 {
+  h2 {
     font-family: 'Nexa-Heavy.ttf', sans-serif;
     font-size: 2.5rem;
     color: darkgreen;
@@ -142,7 +116,7 @@
 
   .text-2-left {
     text-align: left;
-  } */
+  }
 
   /* Responsive styles for phone screens */
   @media (max-width: 414px) {
@@ -160,21 +134,20 @@
       font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
-    /* Redundant class */
-    /* .text-2-left {
-      font-size: 0.9rem;
-    } */
+    .text-2-left {
+      font-size: 0.9rem; /* Adjust text size for readability */
+    }
 
-    /* .phone-span {
+    .phone-span {
        grid-column: span 2;
-    } */
+    }
   }
-/* 
+
   .highlight-img:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: limegreen;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
-  } */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: limegreen;/* Add a subtle green background */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
 
   /* Add keyframes for fade-in */
   @keyframes fadeInUp {
