@@ -57,6 +57,10 @@
       <img src={data.sections[6].image} alt="privacy" />
     </div>
 
+    <div class="grid-item grid-item-opaque item-invisible" style="grid-column: span 2;">
+      <p class="item-invisible">Secret text :)</p> <!-- {data.sections[5].title} -->
+    </div>
+
   </div>
 </div>
 
@@ -108,11 +112,12 @@
 
   }
 
-  /* Redundant class */
-  /* .grid-item-invisible {
-    background-color: rgba(185, 230, 117, 0.414);
+    .item-invisible {
+    background-color: rgba(185, 230, 117, 0);
+    color: rgba(185, 230, 117, 0);
     border: none;
-  } */
+    min-height: 120px;
+  }
 
   .image-span {
     text-align: center;

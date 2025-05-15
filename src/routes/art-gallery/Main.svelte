@@ -25,9 +25,12 @@
     <!-- 2nd row: Image spanning both columns -->
     <div class="grid-item image-span" style="grid-column: span 2;">
       <!-- svelte-ignore a11y_img_redundant_alt -->
-      <img src={data.sections[0].image} alt="About me Image" />
+      <!-- <img src={data.sections[0].image} alt="test img" /> -->
     </div>
 
+    <div class="grid-item grid-item-opaque item-invisible" style="grid-column: span 2;">
+      <p class="item-invisible">Secret text :)</p>
+    </div>
 
   </div>
 </div>
@@ -80,11 +83,7 @@
 
   }
 
-  /* Redundant class */
-  /* .grid-item-invisible {
-    background-color: rgba(185, 230, 117, 0.414);
-    border: none;
-  } */
+
 
   .image-span {
     text-align: center;
@@ -157,7 +156,12 @@
     animation-delay: calc(var(--order) * 0.2s); /* Stagger animation */
   }
 
-
+  .item-invisible {
+    background-color: rgba(185, 230, 117, 0);
+    color: rgba(185, 230, 117, 0);
+    border: none;
+    min-height: 120px;
+  }
   
 </style>
 

@@ -27,7 +27,7 @@
     </div>
 
     <!-- 4th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
+    <div class="grid-item grid-item-opaque" style="grid-column: span 2;">
       <h2>{data.sections[2].title}</h2>
     </div>
     
@@ -43,7 +43,7 @@
     </div>
 
     <!-- 6th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
+    <div class="grid-item grid-item-opaque" style="grid-column: span 2;">
       <h2>{data.sections[3].title}</h2>
     </div>
 
@@ -57,7 +57,7 @@
     </div>
 
     <!-- 8th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
+    <div class="grid-item grid-item-opaque" style="grid-column: span 2;">
       <h2>{data.sections[4].title}</h2>
     </div>
     <div class="grid-item phone-span">
@@ -69,8 +69,8 @@
     </div>
 
     <!-- 9th row -->
-    <div class="grid-item grid-item-invisible" style="grid-column: span 2;">
-      <h2>HEOW</h2> <!-- {data.sections[5].title} -->
+    <div class="grid-item grid-item-opaque item-invisible" style="grid-column: span 2;">
+      <p class="item-invisible">Secret text :)</p> <!-- {data.sections[5].title} -->
     </div>
   </div>
 </div>
@@ -123,9 +123,16 @@
 
   }
 
-  .grid-item-invisible {
-    background-color: rgba(185, 230, 117, 0.414); /* Make this item invisible */
+  .grid-item-opaque {
+    background-color: rgba(185, 230, 117, 0.414); /* Make this item transparent */
     border: none; /* Remove border */
+  }
+
+  .item-invisible {
+    background-color: rgba(185, 230, 117, 0);
+    color: rgba(185, 230, 117, 0);
+    border: none;
+    min-height: 120px;
   }
 
   .image-span {
